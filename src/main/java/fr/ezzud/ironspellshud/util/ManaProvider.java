@@ -1,6 +1,5 @@
-package fr.ezzud.ironspellshud.handlers;
+package fr.ezzud.ironspellshud.util;
 
-import fr.ezzud.ironspellshud.util.PlatformUtil;
 import net.minecraft.client.Minecraft;
 import io.redspace.ironsspellbooks.player.ClientMagicData;
 import net.minecraft.world.entity.player.Player;
@@ -9,7 +8,6 @@ import static io.redspace.ironsspellbooks.api.registry.AttributeRegistry.MAX_MAN
 
 public class ManaProvider {
     public double getCurrentMana() {
-        // Totally redundant but prevents unreachable statement compile errors
         if (PlatformUtil.isModLoaded( "irons_spellbooks")) {
             return ClientMagicData.getPlayerMana();
         }
