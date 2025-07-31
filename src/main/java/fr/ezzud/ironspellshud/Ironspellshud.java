@@ -12,6 +12,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
+import org.apache.maven.artifact.versioning.ComparableVersion;
 import org.slf4j.Logger;
 
 @Mod(Ironspellshud.MODID)
@@ -23,6 +24,7 @@ public class Ironspellshud {
     public Ironspellshud(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::clientSetup);
         AttachmentRegistry.register(modEventBus);
+        ComparableVersion version = new ComparableVersion(modContainer.getModInfo().getVersion().toString());
     }
 
     @EventBusSubscriber(modid = MODID, value = Dist.CLIENT)
@@ -40,7 +42,6 @@ public class Ironspellshud {
 
     public void clientSetup(FMLClientSetupEvent event) {
         event.enqueueWork(this::onInitializeClient);
-        NeoForge.EVENT_BUS.register(this);
         NeoForge.EVENT_BUS.register(ClientTick.class);
     }
 }
