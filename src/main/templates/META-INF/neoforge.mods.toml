@@ -11,7 +11,7 @@ license = "${mod_license}"
 modId = "${mod_id}"
 version = "${mod_version}"
 displayName = "${mod_name}"
-updateJSONURL = "temp"
+updateJSONURL = "https://raw.githubusercontent.com/Ezzud/ironspells-hud/refs/heads/client-only/update.json"
 
 modURL = "https://github.com/Ezzud/ironspells-hud/"
 authors = "${mod_authors}"
