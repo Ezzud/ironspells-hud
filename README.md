@@ -1,13 +1,17 @@
 # 🔵 Iron's Spells HUD
-### For FancyMenu and SpiffyHUD
+<p align="center">
+  <img width=200 src="https://github.com/Ezzud/ironspells-hud/blob/client-only/src/main/resources/assets/logo.png?raw=true" alt="Logo"/>
+</p>
+
+### Recommended with FancyMenu and SpiffyHUD
 
 
 ## 🖥️ CLIENT-SIDE ONLY
 
 ## Requirements
-- Iron's Spells & Spellbooks
-- FancyMenu (Optional but I don't know why you would use this without it)
-- SpiffyHUD (Optional but I don't know why you would use this without it)
+- [Iron's Spells & Spellbooks](https://www.curseforge.com/minecraft/mc-mods/irons-spells-n-spellbooks)
+- [FancyMenu](https://www.curseforge.com/minecraft/mc-mods/fancymenu) (Optional but I don't know why you would use this without it)
+- [SpiffyHUD](https://www.curseforge.com/minecraft/mc-mods/spiffyhud) (Optional but I don't know why you would use this without it)
 
 ## Description
 Iron's Spells HUD is a client-side mod that provides the Mana and Max Mana data values to work with FancyMenu and SpiffyHUD.
